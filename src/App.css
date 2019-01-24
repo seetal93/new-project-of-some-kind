@@ -12,3 +12,24 @@
 .App-link {
   color: #61dafb;
 }
+
+ /* body {
+
+  background-image: url('puppy.jpg');
+  background-blend-mode:screen;
+
+} */
+body {
+  background:url("neutral.jpg");
+  background-size: cover;
+  background-repeat: repeat-x;     /* For flexibility */
+  background-attachment: fixed;
+
+}
+
+#midway{
+  color: White;
+  float: left;
+
+
+}
