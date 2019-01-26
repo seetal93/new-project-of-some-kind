@@ -8,15 +8,17 @@ class Navbar extends Component {
   render() {
     return (
       <Router>
-
+      <nav>
       <div className = "Navbar">
-        <Link to = '/SignIn'>Sign In</Link>
+      <Link to = '/Components/SignIn'>Sign In</Link>
 
-
-
-      <Route path="/SignIn" component={SignIn} />
+      <Route exact path="/Components/SignIn" component={SignIn} />
       </div>
+      </nav>
       </Router>
+
+
+
     );
   }
 }

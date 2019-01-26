@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 class SignIn extends Component {
 
@@ -7,7 +8,9 @@ class SignIn extends Component {
         return (
             <div>
                 <p>
-
+                <Router>
+                <Route exact path="/Components/SignIn" component={SignIn} />
+                </Router>
                 </p>
                 <img src="/Banner.png" width="150" height="80" alt="Banner" />
                 <p>Username: </p>
