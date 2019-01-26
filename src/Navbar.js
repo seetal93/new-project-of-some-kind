@@ -1,17 +1,22 @@
 import React, { Component } from 'react';
 import './App.css';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import SignIn from './Components/SignIn.js';
 
 
 class Navbar extends Component {
   render() {
     return (
-      <ul>
-      <li><a href="default.asp">Rehoming</a></li>
-      <li><a href="news.asp">Sponsor</a></li>
-      <li><a href="contact.asp">Get Involved</a></li>
-      <li><a href="about.asp">Help & advice</a></li>
-      </ul>
+      <Router>
 
+      <div className = "Navbar">
+        <Link to = '/SignIn'>Sign In</Link>
+
+
+
+      <Route path="/SignIn" component={SignIn} />
+      </div>
+      </Router>
     );
   }
 }

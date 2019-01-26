@@ -45,7 +45,7 @@ nav {
   background-color: #FFFF00;
 }
 
-nav a {
+.Navbar {
   float: right;
   display: block;
   color: green;
