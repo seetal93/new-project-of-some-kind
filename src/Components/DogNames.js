@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import './App.css';
-import fluffy from './fluffy.jpg';
-import pinscher from './pinscher.jpg';
-import welshcorgi from './welshcorgi.jpg';
-import fluffy2 from './fluffy2.jpg';
-import frenchbulldog from './frenchbulldog.jpg';
+
+import fluffy from '../Images/fluffy.jpg';
+import pinscher from '../Images/pinscher.jpg';
+import welshcorgi from '../Images/welshcorgi.jpg';
+import fluffy2 from '../Images/fluffy2.jpg';
+import frenchbulldog from '../Images/frenchbulldog.jpg';
 
 class DogNames extends Component {
   render() {
@@ -23,7 +23,7 @@ class DogNames extends Component {
     <div className="column dog-card">
       <img src={welshcorgi} alt="welshcorgi"  height="170" width="225"/>
       <span className="dog-image-name">Gareth</span>
-      <span className="dog-image-breed">Husky</span>
+      <span className="dog-image-breed">Australian Shepard</span>
     </div>
     <div class="column dog-card">
       <img src={fluffy2} alt="fluffy2"  height="170" width="225"/>

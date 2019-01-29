@@ -20,7 +20,7 @@
 
 } */
 body {
-  background:url("neutral.jpg");
+  background:url("./Images/neutral.jpg");
   background-size: cover;
   background-repeat: repeat-x;     /* For flexibility */
   background-attachment: fixed;
@@ -69,4 +69,8 @@ body {
 
 .dog-card:hover .dog-image-breed {
   display: block;
+}
+
+#cute {
+  float: left
 }

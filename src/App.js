@@ -1,32 +1,26 @@
 import React, { Component } from 'react';
 import './App.css';
-import Navbar from './Navbar.js';
-import dog from './dog.jpg';
-import DogNames from './DogNames.js';
-import SignIn from './Components/SignIn.js';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import Navbar from './Components/Navbar'
+import { BrowserRouter, Route } from 'react-router-dom';
+import Home from './Components/Home'
+import About from './Components/About'
+import Contact from './Components/Contact'
+import Login from'./Components/Login'
+
 
 class App extends Component {
   render() {
-    const title = 'Home For Dogs';
     const tagLine = 'Rehoming Dogs in Manchester';
     return (
-
-      <Router>
+      <BrowserRouter>
       <div className="App">
       <Navbar />
-      
-      <h1 id="header"> {title} </h1>
-      <img src={dog} alt="main dog" height="239" width="194"/>
-      <h4> {tagLine} </h4>
-      <DogNames />
-      <body>
-      </body>
+      <Route exact path='/' component={Home} />
+      <Route path='/about' component={About} />
+      <Route path='/contact' component={Contact} />
+      <Route path='/login' component={Login} />
       </div>
-      </Router>
-
-
-
+      </BrowserRouter>
     );
   }
 }
